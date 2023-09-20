@@ -17,6 +17,8 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
+    "lint": "eslint '**/*.{js,jsx}'; stylelint '**/*.{css,scss}'; rubocop",
+    "lint:fix": "eslint --fix '**/*.{js,jsx}'; stylelint --fix '**/*.{css,scss}'; rubocop -A",
     "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
