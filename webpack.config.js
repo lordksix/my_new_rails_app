@@ -27,4 +27,8 @@ module.exports = {
       maxChunks: 1,
     }),
   ],
+  devServer: {
+    static: path.resolve(__dirname, 'app/assets/builds'),
+    port: 3000,
+  },
 };
